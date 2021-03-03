@@ -51,7 +51,6 @@
   (str rss-header rss-channel-info items rss-footer))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   ([& args]
    (let [token (spotify-token)
          track-info (spotify-track-data (spotify-track-info token (first args)))
